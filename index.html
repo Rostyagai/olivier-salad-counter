@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Olivier Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="input-container">
+        <label for="">Enter number of guests:</label>
+        <input type="number" id="guests-count" oninput="CountAmountOfIngradients()" />
+      </div>
+      <div class="main-container">
+        <ul class="left-list">
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Canned peas</p>
+              <span class="ingradient__amount" id="peas">0g</span>
+            </div>
+
+            <img src="./images/peas.jpg" alt="" width="100" class="img right" />
+          </li>
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Cooked sausage</p>
+              <span class="ingradient__amount" id="sausage">0g</span>
+            </div>
+            <img src="./images/sausage.jpg" alt="" width="100" class="img right" />
+          </li>
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Boiled eggs</p>
+              <span class="ingradient__amount" id="eggs">0g</span>
+            </div>
+            <img src="./images/egg.jpg" alt="" width="100" class="img right" />
+          </li>
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Boiled potatoes</p>
+              <span class="ingradient__amount" id="potato">0g</span>
+            </div>
+            <img src="./images/potato.jpg" alt="" width="100" class="img right" />
+          </li>
+        </ul>
+        <div class="salad-container">
+          <img src="./images/salad.webp" alt="salad" class="main-img" />
+          <div class="salad-info">
+            <h1 class="salad-name">Olivier</h1>
+            <p class="salad-weight" id="salad-weight">
+              Summary salad's weight is: <br />
+              0g
+            </p>
+          </div>
+        </div>
+        <ul class="right-list">
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Pickles</p>
+              <span class="ingradient__amount" id="pickles">0g</span>
+            </div>
+            <img src="./images/pickle.jpg" alt="" width="100" class="img right" />
+          </li>
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Carrots</p>
+              <span class="ingradient__amount" id="carrot">0g</span>
+            </div>
+            <img src="./images/carrot.jpg" alt="" width="100" class="img right" />
+          </li>
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Mayonnaise</p>
+              <span class="ingradient__amount" id="mayo">0g</span>
+            </div>
+            <img src="./images/mayo.webp" alt="" width="100" class="img right" />
+          </li>
+          <li class="ingradient">
+            <div>
+              <p class="ingradient__title">Salt</p>
+              <span class="ingradient__amount">To taste</span>
+            </div>
+            <img src="./images/salt.jpg" alt="" width="100" class="img right" />
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
