@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 2rem 0 4rem 0;
   font-family: "Inter", sans-serif;
 }
 ul {
@@ -16,12 +17,22 @@ ul {
 }
 .input-container {
   margin: 0 auto 3rem auto;
+  padding: 1rem;
   text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
 }
-input{
+input {
   height: 24px;
   width: 50px;
   text-align: center;
+  border: 2px solid #077363;
+  border-radius: .3rem;
 }
 .main-container {
   display: flex;
@@ -31,6 +42,9 @@ input{
 
 .salad-container {
   text-align: center;
+  border-radius: 1rem;
+  padding: .5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
 }
 .salad-info {
   background-color: #077363;
@@ -77,4 +91,18 @@ input{
 }
 .img.right {
   border-radius: 0 0.5rem 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .salad-container {
+    position: relative;
+    top: -368px;
+  }
+  .left-list {
+    position: relative;
+    bottom: -320px;
+  }
 }

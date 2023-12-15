@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
     <main>
       <div class="input-container">
         <label for="">Enter number of guests:</label>
-        <input type="number" id="guests-count" oninput="CountAmountOfIngradients()" />
+        <input type="text" pattern="\d*" id="guests-count" oninput="CountAmountOfIngradients()" />
       </div>
       <div class="main-container">
         <ul class="left-list">
